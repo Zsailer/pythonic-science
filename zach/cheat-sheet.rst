@@ -1,28 +1,43 @@
 Python Cheat Sheet
 ==================
 
-**Comments**
+This document is meant to a be quick/simple resource for beginners to remember Python syntax.
+
+The basics
+----------
+
+Commenting
+~~~~~~~~~~
 
 .. code-block:: python
 
-    # This is a comment. Python will ignore this line.
+    >>> # This is a comment. Python will ignore this line.
 
-**Printing**
+Printing
+~~~~~~~~
 
 .. code-block:: python
 
-    print("Hello, world")
+    >>> print("Hello, world")
 
-**Variable assignment**
+Variable assignment
+~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
     # Reference must be on the left of the equals sign.
-     a = 2
-     b = "Hello, World!"
-     c = 1.5
+     >>> a = 2
+     >>> b = 3
+     >>> c = a + b
+     >>> print(c)
+     5
 
-**Standard data-types**
+     >>> d = "Hello, World!"
+     >>> print(d)
+     "Hello, World!"
+
+Standard data-types
+~~~~~~~~~~~~~~~~~~~
 
 - ``int`` : integer (no decimal).
 - ``float`` : decimal number
@@ -31,7 +46,8 @@ Python Cheat Sheet
 - ``list`` : container for multiple python elements. Anything can be
 
 
-**Operators**
+Operators
+~~~~~~~~~
 
 - ``+`` : addition
 - ``-`` : subtraction
@@ -47,7 +63,8 @@ Python Cheat Sheet
 Sequences
 ---------
 
-**Standard data-structures**
+Standard data-structures
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 * ``list`` : an ordered, mutable container for a sequence of elements.
 * ``tuple`` : an ordered, immutable container for a sequence of elements.
@@ -67,7 +84,8 @@ Sequences
     >>> z = {2,2,4,4}
     {2,4}
 
-**Indexing/slicing**
+Indexing/slicing
+~~~~~~~~~~~~~~~~
 
 Index a sequence using bracket notation.
 
@@ -91,10 +109,27 @@ Index a sequence using bracket notation.
     >>> y[0][0]
     2
 
+Adding to List
+~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    >>> x = [1,2,3,4]
+    >>> x.append(5)
+    [1, 2, 3, 4, 5]
+
+    >>> x.prepend(0)
+    [0, 1, 2, 3, 4, 5]
+
+    >>> x = x + [6, 7]
+    [0, 1, 2, 3, 4, 5, 6, 7]
+
+
 Actions
 -------
 
-**Conditions**
+Conditions
+~~~~~~~~~~
 
 .. code-block:: python
 
@@ -111,11 +146,12 @@ Actions
         # Execute this code.
         print("x is between 5 and 10.")
 
-**For-loops**
+For-loops
+~~~~~~~~~
 
 A for-loop repeats a chunk of a code a fixed/defined number of times.
 
-*example 2*
+*Example 1: simple for loop.*
 
 .. code-block:: python
 
@@ -128,7 +164,7 @@ A for-loop repeats a chunk of a code a fixed/defined number of times.
     2
 
 
-*example 1*
+*Example 2*: storing values from loop.
 
 .. code-block:: python
 
@@ -186,5 +222,4 @@ Syntax errors
 
 *possible causes*
 
-Check your colons at the end of the line!! This is true for conditions, functions
-loops, etc.
+Check your colons at the end of the line!! This is true for conditions, functions, loops, etc.
